@@ -6,6 +6,9 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   base: "/forge-web/",
+  build: {
+    outDir: "dist", // Ensure build output goes here
+  },
   server: {
     host: "::",
     port: 8080,
